@@ -119,10 +119,10 @@ img {
 
 @media (min-width: 840px) {
   .hero {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
 
     display: grid;
-    grid-template-columns: auto minmax(0, 1300px) auto;
+    grid-template-columns: auto minmax(0, 1200px) auto;
     align-items: center;
     justify-content: center;
     gap: 1rem;
@@ -137,14 +137,14 @@ img {
   }
 
   .hero-image-wrapper {
-    width: 650px;
+    width: 590px;
     max-width: none;
-    height: 650px;
+    height: 590px;
   }
 
   .hero-image {
-    width: 470px;
-    height: 470px;
+    width: 410px;
+    height: 410px;
   }
 
   .hero-text {
