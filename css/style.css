@@ -1,6 +1,58 @@
 :root {
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
-  --accent-color: #e74c3c;
-  --text-color: #333333;
-}
+  /****** Colors  ******/
+  --primary-color: #24352d;
+  --secondary-color1: #fff4e1;
+  --secondary-color2: #a8b9a3;
+  --accent-color1: #e21e27;
+  --accent-color2: #ffffff;
+
+  /****** Typography  ******/
+  /*font*/
+  --font-family: "raleway", sans-serif;
+
+  /*sizes*/
+  --h1-font-size: 48px;
+  --h2-font-size: 32px;
+  --h3-font-size: 24px;
+  --paragraph-font-size: 18px;
+  --imagetext-font-size: 14px;
+
+  /*weights*/
+  --h1-font-weight: 700;
+  --h2-font-weight: 600;
+  --h3-font-weight: 500;
+  --paragraph-font-weight: 400;
+  --imagetext-font-weight: 300;
+
+  /****** Button styles ******/
+
+  /*læs mere knap 1 */
+  --button-bg-color1: #e21e26;
+  --button-text-color1: #ffffff;
+  --button-border-radius: 999px;
+
+  /*Hover effects*/
+  --hover-color: #e21e26;
+  --hover-bg-color: #fff4e1;
+  --hover-duration: 0.3s; 
+
+  /*læs mere knap 2 */
+  --button-bg-color2: #e21e26;
+  --button-text-color2: #ffffff;
+  --button-border-radius: 999px;
+
+  /*Hover effects*/
+  --hover-color: #e21e26;
+  --hover-bg-color: #fff4e1;
+  --hover-duration: 0.3s; 
+
+  /*læs mere knap 3 */
+  --button-bg-color3: #e21e26;
+  --button-text-color3: #ffffff;
+  --button-border-radius: 999px;
+
+  /*Hover effects*/
+  --hover-color: #e21e26;
+  --hover-bg-color: #fff4e1;
+  --hover-duration: 0.3s; 
+}c
