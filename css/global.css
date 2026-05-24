@@ -107,6 +107,45 @@ section {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Skyggeeffekt */
 }
 
+/***************FOOTER*********************/
+
+.footerindhold {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #fff4e1;
+  color: #24352d;
+  padding: 2rem 1rem;
+}
+
+.footerindhold h3,
+p {
+  margin-left: 35px;
+}
+
+.footerindhold a {
+  color: #24352d;
+  text-decoration: none;
+}
+
+.footerindhold a:hover {
+  text-decoration: underline;
+}
+.footerindhold li {
+  list-style: none;
+}
+
+.footerindhold img {
+  max-width: 50%;
+  height: auto;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+
+.socials {
+  display: block;
+}
+
 /********desktop header***********/
 
 @media (min-width: 840px) {
@@ -147,5 +186,21 @@ section {
     background-color: #c91820;
     transform: translateY(-2px);
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
+  }
+
+  .footerindhold {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .kontakt-osv {
+    margin-top: 105px;
+    display: flex;
+    gap: 2rem;
+  }
+  .footer-venstre,
+  .footer-hoejre {
+    width: 48%;
   }
 }

@@ -103,6 +103,37 @@ main {
   justify-content: center;
 }
 
+/***************AKTIVITETSCARDS*******************/
+
+.aktiviteter-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 30px;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+}
+
+.aktivitet-card {
+  flex: 0 0 80%;
+  background-color: #fff4e1;
+  border-radius: 30px;
+  padding: 1rem;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  text-align: left;
+}
+
+.aktivitet-card h3 {
+  margin-left: 30px;
+}
+
+.aktivitet-card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
 /******************KORT***********************/
 
 .info-graphic {
@@ -157,5 +188,8 @@ main {
   .donationstæller-info img {
     max-width: 70%;
     justify-content: right;
+  }
+  .aktivitet-card {
+    flex: 0 0 300px;
   }
 }
