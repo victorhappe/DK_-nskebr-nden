@@ -25,15 +25,26 @@
   --imagetext-font-weight: 300;
 
   /****** Button styles ******/
+
   /*læs mere knap 1 */
   --button-bg-color1: #e21e26;
   --button-text-color1: #ffffff;
   --button-border-radius: 999px;
 
+  /*Hover effects*/
+  --hover-color: #e21e26;
+  --hover-bg-color: #fff4e1;
+  --hover-duration: 0.3s; 
+
   /*læs mere knap 2 */
   --button-bg-color2: #e21e26;
   --button-text-color2: #ffffff;
   --button-border-radius: 999px;
+
+  /*Hover effects*/
+  --hover-color: #e21e26;
+  --hover-bg-color: #fff4e1;
+  --hover-duration: 0.3s; 
 
   /*læs mere knap 3 */
   --button-bg-color3: #e21e26;
@@ -41,6 +52,7 @@
   --button-border-radius: 999px;
 
   /*Hover effects*/
---hover-color: #e21e26;
+  --hover-color: #e21e26;
   --hover-bg-color: #fff4e1;
-  --hover-duration: 0.3s;
+  --hover-duration: 0.3s; 
+}c
