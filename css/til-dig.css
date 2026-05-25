@@ -1,0 +1,392 @@
+/************ Reset **************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  color: #173128;
+  width: 100%;
+  margin-left: 0;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+}
+
+/******** section setup ********/
+.video-info,
+.dine-fordele,
+.en-ore-koncept,
+.transport-beskrivelse,
+.dankort-betalingskort,
+.faq {
+  background-color: #24352d;
+  padding: 2rem 1rem;
+}
+
+/*********  container ********/
+.container {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+}
+
+/********* h3 udenfor card ********/
+.dine-fordele-info,
+.dankort-info {
+  color: #ffff;
+  padding: 2rem 1rem;
+  line-height: 1.5;
+}
+
+/********* store cards indhold ***********/
+
+.video-card,
+.card-transport,
+.dankort-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding: 2rem;
+  gap: 2rem;
+  line-height: 1.5;
+  border-radius: 8px;
+}
+
+/************************************************/
+
+/********* video ***********/
+.video-card {
+  background-color: #fff4e1;
+}
+
+.video {
+  width: 100%;
+  min-height: 250px;
+
+  border: 0;
+  border-radius: 12px;
+
+  display: block;
+}
+
+.video-info-text {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/********* dine fordele ***********/
+.dine-fordele {
+  background-color: #24352d;
+}
+.dine-fordele-info {
+  color: #ffff;
+}
+
+.fordele-card h3 {
+  text-align: center;
+}
+.fordele-card p {
+  text-align: left;
+  color: #24352d;
+}
+
+.fordele-card-img {
+  /*cirklen */
+  width: 180px;
+  aspect-ratio: 1; /* Holder cirklen  rund responsivt. */
+  background-color: #dde2cc;
+  border: 2px solid #24352d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.fordele-card-img img {
+  /* SVG */
+  width: 140px;
+  height: 140px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fordele-card .link-btn {
+  margin-top: auto;
+}
+
+/* slider */
+.fordele-slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden; /* VIGTIG igen */
+  padding: 0; /* plads til pile */
+}
+
+.fordele-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: 0;
+  transition: transform 0.4s ease;
+}
+
+.fordele-card {
+  flex: 0 0 100%;
+  max-width: 100%;
+
+  background-color: #fff4e1;
+  color: #24352d;
+  border-radius: 24px;
+  padding: 2.5rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.slider-arrow {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 25%;
+  border: none;
+
+  cursor: pointer;
+
+  background-color: #dce8cf;
+  color: #173128;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 10;
+}
+
+.slider-arrow:hover {
+  background-color: #c9e0b0;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.slider-arrow-left {
+  left: 10px; /* i stedet for 10px */
+}
+
+.slider-arrow-right {
+  right: 10px; /* i stedet for 10px */
+}
+
+/********* en ore af gangen ***********/
+.card-ore {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color: #24352d;
+  color: #ffff;
+  line-height: 1.5;
+}
+.card-ore h2 {
+  margin-bottom: 3rem;
+}
+
+.card-ore img {
+  width: min(50%, 400px);
+}
+
+/********* offentlig transport ***********/
+.card-transport {
+  background-color: #dde2cc;
+  color: #24352d;
+}
+
+/* transport */
+.transport-text {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.transport-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/********* dankort ***********/
+.dankort-info {
+  background-color: #24352d;
+  color: #ffff;
+}
+.dankort-cards {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+.dankort-card {
+  background-color: #24352d;
+  color: #ffff;
+  gap: 2rem;
+  line-height: 1.5;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+}
+
+/* modal*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* modal indholdsboks */
+.modal-content {
+  background-color: #dde2cc;
+  color: #24352d;
+  margin: 15rem auto;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  width: 80%;
+  height: auto;
+  line-height: 1.5;
+}
+.modal-content h3,
+.modal-content p {
+  margin: 2rem 0;
+}
+
+/* Luk knap */
+.close {
+  color: #e21e26;
+  float: right;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.close:hover,
+.close:focus {
+  transform: translateY(-2px);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/****************************/
+
+/* cta */
+.link-btn,
+.modal-link-btn,
+.dankort-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+
+  line-height: 1;
+
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+
+  background-color: #24352d;
+  color: white;
+
+  border-radius: 999px;
+  text-decoration: none;
+
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease;
+}
+
+.link-btn:hover {
+  background-color: #1e2a24;
+  transform: translateY(-2px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
+}
+
+.dankort-link-btn,
+.modal-link-btn {
+  background-color: #dde2cc;
+  color: #24352d;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.modal-link-btn {
+  font-size: 16px;
+}
+.dankort-link-btn:hover,
+.modal-link-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
+}
+
+/************ Til Dig Desktop **************/
+
+@media (min-width: 840px) {
+  /* video */
+  .video-card {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .video {
+    min-height: 400px;
+  }
+
+  .fordele-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    transition: transform 0.4s ease;
+  }
+
+  .fordele-card {
+    flex: 0 0 calc((100% - 4rem) / 3);
+    min-width: calc((100% - 4rem) / 3);
+  }
+
+  /* transport */
+  .card-transport {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Dankort cards */
+  .dankort-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
