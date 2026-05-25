@@ -113,9 +113,10 @@ section {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  background-color: #fff4e1;
-  color: #24352d;
+  background-color: var(--secondary-color1);
+  color: var(--primary-color);
   padding: 2rem 1rem;
+  font-family: var(--font-family);
 }
 
 .footerindhold h3,
@@ -124,7 +125,7 @@ p {
 }
 
 .footerindhold a {
-  color: #24352d;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
