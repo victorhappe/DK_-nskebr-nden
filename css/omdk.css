@@ -1,0 +1,270 @@
+/************ Reset **************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  color: #173128;
+  width: 100%;
+  margin-left: 0;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*img og ramme*/
+.omdk-image-wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 340px;
+  height: 340px;
+
+  margin: 0 auto;
+}
+
+.omdk-frame {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+}
+
+.omdk-image {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 250px;
+  height: 250px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  z-index: 2;
+}
+
+.omdk-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* cta */
+.omdk-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+
+  background-color: #24352d;
+  color: white;
+
+  border-radius: 999px;
+  text-decoration: none;
+
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease;
+}
+
+.omdk-btn:hover {
+  background-color: #1e2a24;
+  transform: translateY(-2px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
+}
+/* sections style */
+.first-section-omdk,
+#hvad-er-dankort-onskebronden,
+#donationen-går-ud-pa,
+#grontransport {
+  background-color: #24352d;
+  padding: 2rem 1rem;
+}
+
+.container {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+}
+
+/*first-section-omdk*/
+.card-style,
+.card-style-gronbaggrund {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding: 2rem;
+  gap: 2rem;
+  line-height: 1.5;
+  border-radius: 8px;
+}
+
+.card-style {
+  background-color: #fff4e1;
+}
+
+.card-style-gronbaggrund {
+  background-color: #d1d8c0;
+  color: #24352d;
+  row-gap: 3rem;
+}
+
+.omdk-text {
+  color: #173128;
+  width: 100%;
+  margin-left: 0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.omdk-text h1 {
+  line-height: 1.1;
+}
+
+.omdk-text p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/*hvad-er-dankort-onskebronden*/
+.hvad-er-dankort-onskebronden-text h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+.hvad-er-dankort-onskebronden-text p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/*donationen-går-ud-pa*/
+.donationen-går-ud-pa h2,
+.donationen-går-ud-pa h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.donationen-går-ud-pa li {
+  margin-left: 18px;
+}
+
+.donationen-går-ud-pa p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.kredslob {
+  padding: 2rem 0;
+  text-align: center;
+}
+.kredslob img {
+  max-width: 400px;
+  margin: 0 auto;
+}
+/*.solmellemtrae1 img {
+  border-radius: 20px;
+} */
+
+/*grontransport*/
+.grontransport h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+.grontransport p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.omdk-image-skov img {
+  border-radius: 20px;
+}
+
+/* modal disclaimer */
+.modal-content {
+  background-color: #e21e26;
+  color: #ffffff;
+  margin: 15rem auto;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  width: 80%;
+  height: auto;
+  line-height: 1.5;
+}
+.modal-content h3,
+.modal-content p {
+  margin: 2rem 0;
+}
+
+/* accepter cta */
+#accept-btn {
+  background-color: #fff4e1;
+  color: #000000;
+  float: right;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+#accept-btn:hover,
+#accept-btn:focus {
+  transform: translateY(-2px);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/************ om dk Desktop **************/
+
+@media (min-width: 840px) {
+  .card-style,
+  .card-style-gronbaggrund {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-style-gronbaggrund {
+    align-items: start;
+    background-color: #d1d8c0;
+    color: #24352d;
+  }
+  .card-style-gronbaggrund > div:nth-child(2) {
+    margin-top: 6rem;
+  }
+  .card-style-gronbaggrund > div:nth-child(4) {
+    margin-top: 3rem;
+  }
+}
