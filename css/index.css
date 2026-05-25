@@ -529,6 +529,11 @@ img {
 
   /***********kort-sektion-desk************/
 
+  .kort-sektion {
+    background-color: #24352d;
+    padding: 1rem;
+  }
+
   .dkmap {
     max-width: 500px;
     margin: 0 auto;
@@ -545,7 +550,8 @@ img {
   /******apple*******/
 
   .apple {
-    padding: 6rem 4rem;
+    padding: 1rem 4rem;
+    min-height: auto;
   }
 
   .apple {
@@ -583,12 +589,11 @@ img {
   .apple img {
     width: 80%;
     max-width: 700px;
-    margin: 0;
   }
 
   .apple-btn {
     position: relative;
-    bottom: 140px;
+    bottom: 180px;
     margin-top: 3rem;
     margin-left: 5rem;
     padding: 1rem 1.5rem;

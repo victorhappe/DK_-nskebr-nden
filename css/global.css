@@ -119,8 +119,10 @@ section {
   font-family: var(--font-family);
 }
 
-.footerindhold h3,
-p {
+.footerindhold h3 {
+  margin-left: 35px;
+}
+.footerindhold p {
   margin-left: 35px;
 }
 
