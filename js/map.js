@@ -6,12 +6,12 @@ enge.addEventListener("click", clickGjellerup);
 
 function mouseOverGjellerup() {
   console.log("mouseOverGjellerup");
-  enge.style.fill = "#A8B9A3";
+  enge.style.fill = "var(--secondary-color2)";
 }
 
 function mouseOutGjellerup() {
   console.log("mouseOutGjellerup");
-  enge.style.fill = "#E21E27";
+  enge.style.fill = "var(--accent-color1)";
 }
 
 /********************hotspot gjellerup enge ***********************/
@@ -35,11 +35,7 @@ function clickGjellerup() {
 Nyd naturen fra cykelsaddel eller til fods ad tre kilometer nye vandrestier. Oplev sanglærke og vibe flyve over nye fugtige enge, hvor vilde planter spreder farver og giver nektar til summende bier og sommerfugle.
 
 Hernings borgere og alle andre kan glæde sig over 144 hektar sammenhængende natur med græssende dyr, enge med kær, overdrev, skov og krat.
-
-Oplev naturen
-Oplev fugle som sanglærke og vibe på nye fugtige enge, hvor smukke dyr som kvæg og heste græsser for at pleje naturen.
-
-Undervejs kan du også glæde dig over vilde blomster, som spreder farver og nektar til summende bier og sommerfugle.</p>
+</p>
    `;
 }
 
@@ -78,27 +74,17 @@ Du kan trave op og ned ad bakker, gennem dal og slugt, opleve den smukke Pebermo
 Man kan gå ruterne enkeltvis eller på tværs, da ruterne danner et forgrenet net. 
 
 Man kan starte turen fra de tre p-pladser.
-
-Oplev Hærvejens Perler
-Med Hærvejens Perler har du endnu flere muligheder for at opleve natur, kultur og historie.
-
-Ruten i Hammer Bakker ser du på kortet. 
-
-Det er en kuperet tur på 11 kilometer gennem skov, bakker, hedelandskab og med smukke udsigter.
-Hærvejens Perle kommer forbi storslåede naturområder, landskaber, shelterpladser og kulturhistoriske steder som Tvillinge Høje og Vandtårnet.
-
-Det mest oplagte sted at starte og den officielle start på turen er ved Brødland P, Gennem Bakkerne 44, Vodskov.</p>
-  `;
+`;
 }
 
 function mouseOverHammer() {
   console.log("mouseOverHammer");
-  hammer.style.fill = "#A8B9A3";
+  hammer.style.fill = "var(--secondary-color2)";
 }
 
 function mouseOutHammer() {
   console.log("mouseOutHammer");
-  hammer.style.fill = "#E21E27";
+  hammer.style.fill = "var(--accent-color1)";
 }
 
 /***************hotspot hammer *********************/

@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/til-naturen.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="js/main.js" defer></script>
     <script src="js/map.js" defer></script>
@@ -17,6 +18,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favikonapple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favikon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favikon/favicon-16x16.png">
+    <!-- /* <link rel="manifest" href="/site.webmanifest">*/ -->
 </head>
 
 <body>
@@ -107,7 +113,13 @@
                     <p>Der er allerede nu stier i området, hvor du kan opleve naturen. Se kortet nedenfor på siden.
                         Naturområdet har fri offentlig adgang og får direkte stiforbindelser fra Korsør, Korsør Station
                         og motorvejsparkeringen..</p>
-                    <h3>Hammer Bakker</h3>
+
+                    <div class="lokation">
+                        <span class="dot"></span>
+                        <h3>Hammer Bakker</h3>
+                    </div>
+
+                    <a href="" class="naturencards-btn">Se mere</a>
                 </div>
 
                 <div class="aktivitet-card">
@@ -116,7 +128,12 @@
                     <p>Den bedste natur er i fuglereservatet ved Lejodde og Lejsø. Her yngler fugle som den sjældne stor
                         kobbersneppe, dværgterne, havterne, fjordterne, splitterne, vibe, stor præstekrave, rødben og
                         strandskade forår og sommer.</p>
-                    <h3>Lejodde</h3>
+
+                    <div class="lokation">
+                        <span class="dot"></span>
+                        <h3>Lejodde</h3>
+                    </div>
+                    <a href="" class="naturencards-btn">Se mere</a>
                 </div>
 
                 <div class="aktivitet-card">
@@ -125,16 +142,55 @@
                         enge</h3>
                     <p>Når områdets marker er genoprettet til vildere natur kan du opleve et farverigt flor af vilde
                         planter, hvor sommerfugle og andre insekter suger nektar.</p>
-                    <h3>Hammer Bakker</h3>
+
+                    <div class="lokation">
+                        <span class="dot"></span>
+                        <h3>Gjellerup Enge</h3>
+                    </div>
+
+                    <a href="" class="naturencards-btn">Se mere</a>
                 </div>
 
                 <div class="aktivitet-card">
-                    <img src="img/gjellerupenge.webp" alt="enge">
-                    <h3>Picnic i blomstrene
-                        enge</h3>
-                    <p>Når områdets marker er genoprettet til vildere natur kan du opleve et farverigt flor af vilde
-                        planter, hvor sommerfugle og andre insekter suger nektar.</p>
-                    <h3>Hammer Bakker</h3>
+                    <img src="img/kayak.webp" alt="kayak">
+                    <h3>Kajak ved fjorden</h3>
+                    <p>Oplev den rolige natur fra vandet og kom tæt på fuglelivet langs kysten. Fjorden byder på smukke
+                        udsigter, stille vand og gode muligheder for både begyndere og erfarne kajakroere.</p>
+
+                    <div class="lokation">
+                        <span class="dot"></span>
+                        <h3>Vejle Fjord</h3>
+                    </div>
+
+                    <a href="" class="naturencards-btn">Se mere</a>
+                </div>
+
+                <div class="aktivitet-card">
+                    <img src="img/dyrdukanse.webp" alt="dyrdukanse">
+                    <h3>Skovtur og dyreliv</h3>
+                    <p>Tag på opdagelse mellem træerne og oplev det rige dyreliv i skoven. Her kan du finde rolige
+                        stier, høre fuglesang og nyde naturen året rundt.</p>
+
+                    <div class="lokation">
+                        <span class="dot"></span>
+                        <h3>Hesbjerg Skov</h3>
+                    </div>
+
+                    <a href="" class="naturencards-btn">Se mere</a>
+                </div>
+
+                <div class="aktivitet-card">
+                    <img src="img/naturfoto.webp" alt="naturfoto">
+                    <h3>Udsigt og naturfoto</h3>
+                    <p>Det dramatiske landskab og de stejle klippeformationer gør området perfekt til vandreture og
+                        naturfotografi. Nyd udsigten over havet og oplev den særlige bornholmske natur.</p>
+
+                    <div class="lokation">
+                        <span class="dot"></span>
+                        <h3>Randkløve Skår</h3>
+                    </div>
+
+                    <a href="" class="naturencards-btn">Se mere</a>
                 </div>
             </div>
         </section>
@@ -196,8 +252,11 @@
                         befinder sig!
                     </p>
                 </article>
-                <aside id="efficiency" class="info-box hide">INFO-BOX</aside>
-                <aside id="requirement" class="info-box hide">INFO-BOX</aside>
+                <aside id="efficiency" class="info-box hide">Her kan du udforske udvalgte naturområder i Danmark.
+                    Klik på de røde punkter i kortet for at få information om hvert område, aktiviteter og naturtyper.
+                </aside>
+                <aside id="requirement" class="info-box hide">Vælg et område på kortet for at se fakta, aktiviteter og
+                    naturoplevelser.</aside>
             </section>
         </div>
     </main>
@@ -241,19 +300,24 @@
                     <div>
                         <h3>Kontakt</h3>
                         <ul>
-                            <li><a href="https://dankort.dk/dankort">Kontakt Salg</a></li>
-                            <li><a href="https://dankort.dk/logo-og-billeder"> Kontakt Kundeservice</a></li>
-                            <li><a href="https://dankort.dk/logo-og-billeder"> Support Erhverv</a></li>
-                            <li><a href="https://dankort.dk/logo-og-billeder"> Support Privat</a></li>
-                        </ul>
+                            <li><a href="https://dankort.dk/kontakt-salg">Kontakt Salg</a></li>
+                            <li><a href="https://dankort.dk/kontakt-erhverv"> Kontakt Kundeservice</a></li>
+                            <li><a href="https://dankort.dk/support-erhverv"> Support Erhverv</a></li>
+                            <li><a href="https://dankort.dk/support-privat"> Support Privat</a></li>
                     </div>
 
                     <div>
                         <h3>Politikker</h3>
                         <ul>
-                            <li><a href="https://dankort.dk/dankort">Privatlivspolitikker</a></li>
-                            <li><a href="https://dankort.dk/logo-og-billeder">Cookies</a></li>
-                            <li><a href="https://dankort.dk/logo-og-billeder"> AEE regulativ</a></li>
+                            <li><a
+                                    href="https://www.nets.eu/GDPR/Pages/Privacy-notice-for-nets.aspx?__hstc=79159691.8961f7ca1b3d0ec28f29c57cde92893a.1777811143345.1779615781369.1779656944202.7&__hssc=79159691.1.1779656944202&__hsfp=07e37af9b1e8bc5563ba94b3eae5112c">Privatlivspolitikker</a>
+                            </li>
+                            <li><a
+                                    href="https://www.nets.eu/dk-da/Pages/cookie-policy.aspx?__hstc=79159691.8961f7ca1b3d0ec28f29c57cde92893a.1777811143345.1779615781369.1779656944202.7&__hssc=79159691.2.1779656944202&__hsfp=925c390904380e9e314cdab41bde63af">Cookies</a>
+                            </li>
+                            <li><a
+                                    href="https://support.nets.eu/da-DK/article/general-nexi-group-statement?__hstc=79159691.8961f7ca1b3d0ec28f29c57cde92893a.1777811143345.1779615781369.1779656944202.7&__hssc=79159691.2.1779656944202&__hsfp=925c390904380e9e314cdab41bde63af">
+                                    AEE regulativ</a></li>
                         </ul>
                     </div>
 
@@ -261,7 +325,7 @@
                 <div>
                     <img src="img/dankortmærke.svg" alt="dankortmærke">
                 </div>
-                <div>
+                <div class="dkø-slogan">
                     <img src="img/ønskebrøndslogan.svg" alt="ønskebrøndslogan">
                 </div>
             </section>

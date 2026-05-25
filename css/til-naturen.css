@@ -3,7 +3,7 @@
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
 
-  background-color: #a8b9a3;
+  background-color: var(--secondary-color2);
   color: #24352d;
 
   border-radius: 999px;
@@ -12,17 +12,48 @@
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
   transition: 0.2s ease;
   align-self: flex-start;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-family);
 }
 
 .naturen-btn:hover {
-  background-color: #919f8c;
+  background-color: var(--secondary-color2);
   transform: translateY(-2px);
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
 }
 
+.naturencards-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 20px;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--accent-color1);
+  color: var(--accent-color2);
+  margin-top: auto;
+
+  border-radius: 999px;
+  text-decoration: none;
+
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease;
+  align-self: flex-start;
+  font-family: var(--font-family);
+}
+
+.naturencards-btn:hover {
+  background-color: var(--accent-color1);
+  transform: translateY(-2px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
+}
+
+.aktiviteterkarrussel h2 {
+  color: var(--accent-color2);
+  font-family: var(--font-family);
+}
+
+/*********************HERONATUREN**************/
+
 main {
-  background-color: #24352d;
+  background-color: var(--primary-color);
 }
 
 .baggrundblade {
@@ -70,11 +101,11 @@ main {
   object-fit: cover;
 }
 .hero_tilnaturentekst {
-  color: #ffffff;
+  color: var(--accent-color2);
   width: 100%;
   margin-left: 0;
   text-align: left;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-family);
 }
 
 .spørgsmål-tekst {
@@ -88,19 +119,26 @@ main {
 
 /******************DONATIONSTÆLLER***************/
 .donationstæller-info {
-  background-color: #dde2cc;
-  border-radius: 90px;
-  padding: 50px;
-  margin: 50px 50px;
-  font-family: raleway, sans-serif;
-  color: #24352d;
+  background-color: var(--secondary-color2);
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px auto;
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  max-width: 900px;
 }
 
 .donationstæller-info img {
-  max-width: 80%;
+  max-width: 60%;
   padding: 30px;
   height: auto;
   justify-content: center;
+}
+
+.donationstæller-info p {
+  max-width: 400px;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 /***************AKTIVITETSCARDS*******************/
@@ -113,16 +151,22 @@ main {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 1rem;
+  align-items: stretch;
 }
 
 .aktivitet-card {
   flex: 0 0 80%;
-  background-color: #fff4e1;
+  background-color: var(--secondary-color1);
   border-radius: 30px;
   padding: 1rem;
   flex-shrink: 0;
   scroll-snap-align: start;
   text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  color: var(--primary-color);
 }
 
 .aktivitet-card h3 {
@@ -134,26 +178,55 @@ main {
   border-radius: 20px;
 }
 
+.dot {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  background: var(--accent-color1);
+  border-radius: 50%;
+}
+
+.lokation {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 /******************KORT***********************/
 
 .info-graphic {
-  background-color: #fff4e1;
+  background-color: var(--secondary-color1);
   padding: 70px;
   border-radius: 60px;
   margin: 20px 30px 20px 30px;
 }
 
 .kortoversigt {
-  background-color: #dde2cc;
+  background-color: var(--secondary-color2);
   padding: 50px;
   justify-content: center;
   margin: 20px 30px 20px 30px;
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  border-radius: 30px;
 }
 
 .info-graphic svg {
   width: 100%;
   height: auto;
 }
+
+#efficiency,
+#requirement {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 30px;
+  margin: 20px 30px 20px 30px;
+  color: var(--secondary-color1);
+  font-family: var(--font-family);
+}
+
+/******************MEDIA**************************/
 
 @media (min-width: 840px) {
   .hero_tilnaturen {
