@@ -115,14 +115,188 @@ img {
   display: none;
 }
 
+/*********donation*******/
+
+.donation-section {
+  background-color: #24352d;
+  padding: 4rem 1rem;
+}
+
+.donation-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 20px;
+  background-color: #dde2cc;
+  color: #24352d;
+}
+
+.donation-card h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.donation-total {
+  font-family: "Raleway", sans-serif;
+  background-color: #fff4e1;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.donation-total strong {
+  font-family: "Raleway", sans-serif;
+  font-variant-numeric: tabular-nums;
+  display: block;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.donation-stats {
+  font-family: "Raleway", sans-serif;
+  display: grid;
+  gap: 1rem;
+}
+
+.donation-stats article {
+  background-color: #fff4e1;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.donation-stats strong {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  margin-top: 2rem;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.donation-stats span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/*******kredsløb*******/
+
+.koncept h1 {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.koncept {
+  background-color: #24352d;
+  padding: 4rem 1rem;
+}
+
+.kredsløb {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+/******fordele*******/
+
+.fordele-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.fordele {
+  background-color: #24352d;
+  padding: 4rem 1rem;
+}
+
+.fordele h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+.fordele p {
+  margin-top: 0.5rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.fordeleimg {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 20px;
+  background-color: #fff4e1;
+  color: #24352d;
+}
+
+.fordeleimg h2 {
+  font-family: "Raleway", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.kort {
+  width: 270px;
+  height: 270px;
+
+  border-radius: 50%;
+
+  background-color: #d1d8c0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+.kort img {
+  width: 55%;
+  height: 55%;
+
+  object-fit: contain;
+}
+
+.fordele-btn {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+
+  margin: 1rem auto 0 auto;
+
+  padding: 0.6rem 1.2rem;
+
+  background-color: #e21e26;
+  color: white;
+
+  border-radius: 999px;
+  text-decoration: none;
+
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease;
+}
+.fordele-btn:hover {
+  background-color: #c91820;
+  transform: translateY(-2px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
+}
+
 /************ Hero Desktop **************/
 
 @media (min-width: 840px) {
   .hero {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
 
     display: grid;
-    grid-template-columns: auto minmax(0, 1300px) auto;
+    grid-template-columns: auto minmax(0, 1200px) auto;
     align-items: center;
     justify-content: center;
     gap: 1rem;
@@ -137,14 +311,14 @@ img {
   }
 
   .hero-image-wrapper {
-    width: 650px;
+    width: 590px;
     max-width: none;
-    height: 650px;
+    height: 590px;
   }
 
   .hero-image {
-    width: 470px;
-    height: 470px;
+    width: 410px;
+    height: 410px;
   }
 
   .hero-text {
@@ -180,5 +354,44 @@ img {
     background-color: #c9e0b0;
     transform: translateY(-2px);
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
+  }
+
+  .donation-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /*******kredsløb desktop*******/
+
+  .kredsløb img {
+    margin-left: 13rem;
+    width: 60%;
+    height: auto;
+    display: block;
+  }
+
+  /******fordele deksktop******/
+
+  .fordele-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .fordel-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: #24352d;
+    margin: 2rem 0 3rem;
+  }
+
+  .fordeleimg h2 {
+    font-family: "Raleway", sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 17px;
   }
 }

@@ -107,16 +107,55 @@ section {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Skyggeeffekt */
 }
 
+/***************FOOTER*********************/
+
+.footerindhold {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #fff4e1;
+  color: #24352d;
+  padding: 2rem 1rem;
+}
+
+.footerindhold h3,
+p {
+  margin-left: 35px;
+}
+
+.footerindhold a {
+  color: #24352d;
+  text-decoration: none;
+}
+
+.footerindhold a:hover {
+  text-decoration: underline;
+}
+.footerindhold li {
+  list-style: none;
+}
+
+.footerindhold img {
+  max-width: 50%;
+  height: auto;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+
+.socials {
+  display: block;
+}
+
 /********desktop header***********/
 
 @media (min-width: 840px) {
   .site-header {
-    height: 10rem;
+    height: 7rem;
     padding: 0 5rem;
   }
 
   .logo img {
-    width: 250px;
+    width: 200px;
   }
 
   .burger {
@@ -129,12 +168,12 @@ section {
   }
 
   .main-nav a {
-    padding: 0.9rem 4rem;
+    padding: 0.6em 2rem;
     border-radius: 999px;
     background-color: #e21e26;
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: "Raleway", sans-serif;
     font-weight: 600;
 
@@ -147,5 +186,21 @@ section {
     background-color: #c91820;
     transform: translateY(-2px);
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
+  }
+
+  .footerindhold {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .kontakt-osv {
+    margin-top: 105px;
+    display: flex;
+    gap: 2rem;
+  }
+  .footer-venstre,
+  .footer-hoejre {
+    width: 48%;
   }
 }
