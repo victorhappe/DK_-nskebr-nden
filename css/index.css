@@ -299,7 +299,7 @@ img {
 
 .kort-sektion h1 {
   font-family: "Raleway", sans-serif;
-  color: white;
+  color: #24352d;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
@@ -307,10 +307,11 @@ img {
 
 .kort-sektion p {
   font-family: "Raleway", sans-serif;
-  color: white;
+  color: #24352d;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .dkmap {
@@ -320,6 +321,10 @@ img {
   border-radius: 20px;
   background-color: #fff4e1;
   color: #24352d;
+}
+
+.vejle img {
+  display: none;
 }
 
 .kort-btn {
@@ -419,6 +424,30 @@ img {
   background-color: #a1bb99;
   transform: translateY(-2px);
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
+}
+
+/******samarbejdspartnere**********/
+
+.partnere {
+  background-color: #24352d;
+  padding: 4rem 1rem;
+}
+
+.partnere h1 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+}
+
+.partnere p {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.partnere img {
+  margin-top: 3rem;
 }
 
 /************ Hero Desktop **************/
@@ -530,8 +559,11 @@ img {
   /***********kort-sektion-desk************/
 
   .kort-sektion {
-    background-color: #24352d;
+    background-color: #fff4e1;
     padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
   .dkmap {
@@ -545,6 +577,22 @@ img {
 
   .dkmap img {
     size: 80%;
+  }
+
+  .vejle {
+    width: 560px;
+    height: 560px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 7rem;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .vejle img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   /******apple*******/
@@ -593,7 +641,7 @@ img {
 
   .apple-btn {
     position: relative;
-    bottom: 180px;
+    bottom: 300px;
     margin-top: 3rem;
     margin-left: 5rem;
     padding: 1rem 1.5rem;
