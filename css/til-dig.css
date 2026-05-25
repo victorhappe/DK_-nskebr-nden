@@ -18,6 +18,25 @@ main {
   margin-left: 0;
   text-align: left;
   font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /******** section setup ********/
@@ -35,6 +54,27 @@ main {
 .container {
   width: min(100% - 2rem, 1200px);
   margin-inline: auto;
+}
+
+/********* h2 streg ***************/
+.dine-fordele-info,
+.dankort-info {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.dine-fordele-info::after,
+.dankort-info::after {
+  content: "";
+  display: block;
+
+  width: 400px; /* længden på stregen */
+  height: 3px; /* tykkelsen */
+
+  background-color: #ffffff;
+
+  margin: 2rem auto; /* CENTRERER den */
+  border-radius: 2px;
 }
 
 /********* h3 udenfor card ********/
@@ -101,28 +141,26 @@ main {
 }
 
 .fordele-card-img {
-  /*cirklen */
-  width: 180px;
-  aspect-ratio: 1; /* Holder cirklen  rund responsivt. */
-  background-color: #dde2cc;
-  border: 2px solid #24352d;
+  width: 270px;
+  height: 270px;
+
   border-radius: 50%;
+
+  background-color: #d1d8c0;
+
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
   overflow: hidden;
 }
 
 .fordele-card-img img {
-  /* SVG */
-  width: 140px;
-  height: 140px;
+  width: 55%;
+  height: 55%;
 
-  margin: 0 auto;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: contain;
 }
 
 .fordele-card .link-btn {
@@ -251,13 +289,25 @@ main {
   text-align: center;
   gap: 2rem;
 }
+
 .dankort-card {
+  display: flex;
+  flex-direction: column;
   background-color: #24352d;
   color: #ffff;
   gap: 2rem;
   line-height: 1.5;
   padding: 1rem 2rem;
   margin: 2rem 0;
+  text-align: center;
+  align-items: center;
+}
+
+.dankort-card img {
+  width: 55%;
+  height: 55%;
+
+  object-fit: contain;
 }
 
 /* modal*/
@@ -358,6 +408,12 @@ main {
 /************ Til Dig Desktop **************/
 
 @media (min-width: 840px) {
+  /* h2 streg */
+  .dine-fordele-info::after,
+  .dankort-info::after {
+    width: auto; /* længden på stregen */
+  }
+
   /* video */
   .video-card {
     grid-template-columns: 1fr 1fr;
@@ -367,7 +423,7 @@ main {
   .video {
     min-height: 400px;
   }
-
+  /* dine fordele */
   .fordele-grid {
     display: flex;
     flex-wrap: nowrap;
@@ -387,6 +443,29 @@ main {
 
   /* Dankort cards */
   .dankort-cards {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+  }
+
+  .dankort-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
+  .dankort-text {
+    margin-bottom: auto;
+  }
+
+  .dankort-card img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 }

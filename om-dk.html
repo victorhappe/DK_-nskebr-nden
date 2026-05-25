@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/til-dig.css">
+    <link rel="stylesheet" href="css/omdk.css">
 
 
     <script src="js/main.js" defer></script>
@@ -41,25 +41,39 @@
     </header>
 
     <main>
-        <section class="hero">
+        <div id="disclaimer-modal" class="modal">
 
-            <div class="hero-card">
+            <div class="modal-content">
+                <h1>Disclaimer</h1>
+                <p>Dette projekt er udarbejdet som led i en eksamen på Erhvervsakademi København og i samarbejde med
+                    1508,
+                    hvor Dankort udelukkende fungerer som case-virksomhed. Projektet er dermed fiktivt og ikke
+                    bestilt
+                    af eller udarbejdet
+                    på vegne af Dankort.</p>
+                <button id="accept-btn">Jeg accepterer</button>
+            </div>
+        </div>
 
-                <div class="hero-image-wrapper">
+        <section class="first-section-omdk" id="first-section-omdk">
 
-                    <img class="hero-frame" src="img/BRØND RAMME.svg" alt="">
+            <div class="container">
 
-                    <div class="hero-image">
-                        <img src="img/hero-1.webp" alt="Mennesker i naturen">
+                <div class="card-style">
+                    <div class="omdk-image-wrapper">
+
+                        <img class="omdk-frame" src="img/brond_ramme.svg" alt="brondramme">
+
+                        <div class="omdk-image">
+                            <img src="img/hero-1.webp" alt="Mennesker i naturen">
+                        </div>
+
                     </div>
 
-                </div>
+                    <div class="omdk-text">
+                        <h2>“En øre i brønden –
+                            et ønske for naturen”</h2>
 
-                <div class="hero-text">
-                    <h2>“En øre i brønden –
-                        et ønske for naturen”</h2>
-
-                    <div>
                         <p>
                             Hver gang du bruger dit Dankort, donerer vi 1 øre til Den Danske Naturfond. Det bliver til
                             mere end 10 millioner kroner
@@ -70,70 +84,168 @@
                         <p>
                             Målet er ikke at forbruge mere, men at skabe mere plads til den danske natur. 
                         </p>
-                        <div>
+                        <a href="til-naturen.html" class="omdk-btn">Læs mere</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
 
-                            <a href="til-naturen.html" class="hero-btn">Læs mere</a>
+        <section class="hvad-er-dankort-onskebronden" id="hvad-er-dankort-onskebronden">
+
+            <div class="container">
+                <div class="card-style">
+                    <div class="hvad-er-dankort-onskebronden-text">
+                        <h2>Hvad er Dankort ønskebrønden?</h2>
+                        <p>Dankort Ønskebrønden er et initiativ iværksat af Dankort med formål om at styrke den danske
+                            vilde
+                            natur gennem
+                            pengedonationer til Den Danske Naturfond. Dankort, ejet af Nexi Group, donerer 1 øre pr.
+                            gennemført
+                            betaling med et
+                            Dankort til Den Danske Naturfond. Det betyder, at alle betalinger gennemført med et Dankort
+                            udløser
+                            et bidrag på 1 øre –
+                            både for køb foretaget i en fysisk butik/selvbetjeningsløsning eller i en webshop, og uanset
+                            om
+                            der
+                            betales med et
+                            fysisk Dankort eller et virtuelt Dankort i en wallet. 
+                            Dankort donerer minimum 10 mio. kr. årligt til Den Danske Naturfond, uanset hvor mange
+                            betalinger
+                            der sker med
+                            Dankort. Udover Dankort, bidrager initiativets partnere med donationer til Den Danske
+                            Naturfond
+                            –
+                            ligeledes med 1 øre
+                            pr. gennemført Dankort transaktion. 
+                             </p>
+                    </div>
+                    <div class="omdk-image-wrapper">
+
+                        <img class="omdk-frame" src="img/brond_ramme.svg" alt="brondramme">
+
+                        <div class="omdk-image">
+                            <img src="img/webpfotos/mark2.webp" alt="mark2">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="donationen-går-ud-pa" id="donationen-går-ud-pa">
+
+            <div class="container">
+
+                <div class="card-style-gronbaggrund">
+
+                    <div>
+                        <h2>Donationen går ud på</h2>
+                        <div class="kredslob">
+                            <img src="img/kredslobgron.svg" alt="kredslobgron">
+                        </div>
+                        <h4>Hos os doneres der</h4>
+                        <ul>
+                            <li>1 øre når du bruger dit betalingskort</li>
+                            <li>1 øre fra banken </li>
+                            <li>1 øre fra samarbejdspartnere, som er udvalgte butikker.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Det er ikke dine penge, der doneres.</h4>
+                        <p>Det er Dankort, der donerer 1 øre pr. transaktion
+                            til
+                            Den
+                            Danske
+                            Naturfond. Det
+                            samme gør de partnervirksomheder, der er med i samarbejdet.
+                            <br>
+                            Alle Dankorts pengebidrag til Naturfonden kommer fra Dankort selv, der er ejet af
+                            Nets/Nexi.
+                            Ønsker
+                            du
+                            som forbruger
+                            selv at bidrage med donationer, kan dette ske via Naturfondens
+                            hjemmeside: www.naturfonden.dk
+                        </p>
+                        <a href="til-naturen.html" class="omdk-btn">Se donationstælleren</a>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Formålet med samarbejdspartnerne</h3>
+                            <p>
+                                Det betyder, at Dankort ønsker at styrke den danske natur og bidrage til den
+                                kollektive
+                                naturgenopretning i hele Danmark.
+                                Til det formål er Den Danske Naturfond en velvalgt samarbejdspartner, da vores
+                                bidrag
+                                går
+                                ubeskåret til at sikre mere blivende natur i hele Danmark – øre for øre.  
+                                <br>
+                                <br>
+                                Der findes mange vigtige formål, som vi kunne have valgt at støtte med Dankort
+                                Øremærket. Vi
+                                har
+                                valgt,
+                                at det skal være den danske natur, fordi naturen er noget alle i Danmark er fælles
+                                om –
+                                både
+                                at
+                                nyde
+                                og
+                                at passe på. Men
+                                desværre ser vi, at den danske natur har det skidt og at dyr og planter forsvinder.
+
+                                I samarbejde med Den Danske Naturfond kan vi gøre noget konkret for naturen i
+                                Danmark,
+                                så
+                                både
+                                nuværende
+                                og kommende generationer kan nyde godt af den. 
+                            </p>
                         </div>
                     </div>
-        </section>
-        <section id="hvad-er-dankort-ønskebronden">
-            <h2>Hvad er Dankort ønskebrønden?</h2>
-            <p>Hver gang du bruger dit Dankort, kan du nu opspare rabatter på todbilletter når du tager s-toget. For
-                hver gang
-                du
-                bruger dankort bliver 0.5% af beløbet til en opsparing til at bruge på togbilletter.
-                Endnu en måde du kan være med til at vælge det bæredygtige valg og passe bedre på vores natur! </p>
-            <img src="" alt="">
-        </section>
-        <section id="donationen-går-ud-pa">
-            <h2>Donationen går ud på</h2>
-            <p>Hos os doneres der 1 øre når du bruger dit betalingskort, 1 øre fra banken og 1 øre fra
-                samarbejdspartnere, som er
-                udvalgte butikker.
-                <br>
-                Det er ikke dine penge, der doneres. Det er Dankort, der donerer 1 øre pr. transaktion til Den Danske
-                Naturfond. Det
-                samme gør de partnervirksomheder, der er med i samarbejdet.
-                <br>
-                Alle Dankorts pengebidrag til Naturfonden kommer fra Dankort selv, der er ejet af Nets/Nexi. Ønsker du
-                som forbruger
-                selv at bidrage med donationer, kan dette ske via Naturfondens hjemmeside: www.naturfonden.dk
-            </p>
-            <br>
-            <br>
-            <h3>Formålet med samarbejdspartnerne</h3>
-            <p>
-                Det betyder, at Dankort ønsker at styrke den danske natur og bidrage til den kollektive
-                naturgenopretning i
-                hele
-                Danmark. Til det formål er Den Danske Naturfond en velvalgt samarbejdspartner, da vores bidrag går
-                ubeskåret
-                til at
-                sikre mere blivende natur i hele Danmark – øre for øre.  
-                <br>
-                Der findes mange vigtige formål, som vi kunne have valgt at støtte med Dankort Øremærket. Vi har valgt,
-                at
-                det skal være
-                den danske natur, fordi naturen er noget alle i Danmark er fælles om – både at nyde og at passe på. Men
-                desværre ser vi,
-                at den danske natur har det skidt og at dyr og planter forsvinder. I samarbejde med Den Danske Naturfond
-                kan
-                vi gøre
-                noget konkret for naturen i Danmark, så både nuværende og kommende generationer kan nyde godt af den. 
-            </p>
+                    <div class="omdk-image-wrapper">
 
+                        <img class="omdk-frame" src="img/brond_ramme.svg" alt="brondramme">
 
-            <img src="" alt="">
-        </section>
-        <section id="grontransport">
-            <h2>Du kan altid vælge den grønne transport</h2>
-            <p>Hver gang du bruger dit Dankort, kan du nu opspare rabatter på todbilletter når du tager s-toget. For
-                hver gang
-                du
-                bruger dankort bliver 0.5% af beløbet til en opsparing til at bruge på togbilletter.
-                Endnu en måde du kan være med til at vælge det bæredygtige valg og passe bedre på vores natur! </p>
-            <img src="" alt="">
+                        <div class="omdk-image">
+                            <img src="img/webpfotos/solmellemtrae1.webp" alt="solmellemtraer">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <section class="grontransport" id="grontransport">
+
+            <div class="container">
+
+                <div class="card-style">
+
+                    <div>
+                        <div class="omdk-image-skov">
+                            <img src="img/webpfotos/skov2.webp" alt="skov2">
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Du kan altid vælge den grønne transport</h2>
+                        <p>Hver gang du bruger dit Dankort, kan du nu opspare rabatter på todbilletter når du tager
+                            s-toget.
+                            For
+                            hver gang
+                            du
+                            bruger dankort bliver 0.5% af beløbet til en opsparing til at bruge på togbilletter.
+                            Endnu en måde du kan være med til at vælge det bæredygtige valg og passe bedre på vores
+                            natur! 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
+    <script src="js/main.js"></script>
+</body>
