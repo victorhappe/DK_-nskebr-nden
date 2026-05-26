@@ -120,12 +120,15 @@ section {
 }
 
 .disclaimerlogin-modal-container {
-  padding: 30px;
   max-width: 500px;
-  background: #e21e26;
-  color: #ffffff;
   margin: 15rem auto;
   padding: 1rem 3rem;
+
+  font-family: var(--font-family);
+  font-size: var(--paragraph-font-size);
+  background: #e21e26;
+  color: #ffffff;
+
   border-radius: 20px;
   width: 80%;
   height: auto;
