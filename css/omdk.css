@@ -216,38 +216,6 @@ p {
   border-radius: 20px;
 }
 
-/* modal disclaimer */
-.modal-content {
-  background-color: #e21e26;
-  color: #ffffff;
-  margin: 15rem auto;
-  padding: 1rem 3rem;
-  border-radius: 20px;
-  width: 80%;
-  height: auto;
-  line-height: 1.5;
-}
-.modal-content h3,
-.modal-content p {
-  margin: 2rem 0;
-}
-
-/* accepter cta */
-#accept-btn {
-  background-color: #fff4e1;
-  color: #000000;
-  float: right;
-  font-size: 50px;
-  font-weight: normal;
-}
-
-#accept-btn:hover,
-#accept-btn:focus {
-  transform: translateY(-2px);
-  text-decoration: none;
-  cursor: pointer;
-}
-
 /************ om dk Desktop **************/
 
 @media (min-width: 840px) {
@@ -260,11 +228,5 @@ p {
     align-items: start;
     background-color: #d1d8c0;
     color: #24352d;
-  }
-  .card-style-gronbaggrund > div:nth-child(2) {
-    margin-top: 6rem;
-  }
-  .card-style-gronbaggrund > div:nth-child(4) {
-    margin-top: 3rem;
   }
 }
