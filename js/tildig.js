@@ -1,5 +1,4 @@
 /* Slider */
-
 const track = document.querySelector(".fordele-grid");
 
 const nextBtn = document.querySelector(".slider-arrow-right");
@@ -45,7 +44,7 @@ function movePrev() {
 nextBtn.addEventListener("click", moveNext);
 prevBtn.addEventListener("click", movePrev);
 
-/* Modal */
+/* modal dankort*/
 
 // få fat i modal
 var modal = document.getElementById("myModal");
@@ -72,3 +71,25 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+/* Faq */
+var buttons = document.getElementsByClassName("plus-btn");
+
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function () {
+    var accordion = this.parentElement;
+    var panel = accordion.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+
+      // skfiter til plus
+      this.textContent = "+";
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+
+      // skifter til minus
+      this.textContent = "−";
+    }
+  });
+}
