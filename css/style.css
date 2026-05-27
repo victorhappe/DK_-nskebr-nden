@@ -28,34 +28,51 @@
 
   /*spacing*/
   --line-height: 1.5;
-  /******* Button styles ******/
-  /*læs mere knap 1 */
+
+  /************************************* STANDARD BUTTON ELEMENTS **************************************************/
+  --display-cta: inline-block;
+  --margin-top-cta: 1rem;
+  --padding-cta: 6rem 1.2rem;
+  --border-radius-cta: 999px;
+  --text-decoration-cta: none;
+
+  --box-shadow-cta: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  --transition-cta: all 0.2s ease;
+  --allign-self-cta: flex-start;
+  --font-weight-cta: bold;
+
+  /****************************************** BUTTON STYLES ************************************************/
+
+  /*************** Læs mere knap, Se mere knap, Her knap røde *******************/
   --button-bg-color1: #e21e26;
   --button-text-color1: #ffffff;
-  --button-border-radius: 999px;
 
   /*Hover effects*/
   --hover-color: #e21e26;
   --hover-bg-color: #fff4e1;
   --hover-duration: 0.3s;
 
-  /*læs mere knap 2 */
-  --button-bg-color2: #e21e26;
-  --button-text-color2: #ffffff;
-  --button-border-radius: 999px;
+  /*******************Dankort knapper lysegrønne *******************/
+  --button-bg-color2: #a8b9a3;
+  --button-text-color2: #24352d;
 
   /*Hover effects*/
-  --hover-color: #e21e26;
-  --hover-bg-color: #fff4e1;
-  --hover-duration: 0.3s;
+  --transform-hover: translateY(-2px);
+  --cta-box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
 
-  /*læs mere knap 3 */
-  --button-bg-color3: #e21e26;
-  --button-text-color3: #ffffff;
-  --button-border-radius: 999px;
+  /*******************læs mere her knap 1 mørkegrøn *******************/
+  --button-bg-color2: #24352d;
+  --button-text-color2: #a8b9a3;
 
   /*Hover effects*/
-  --hover-color: #e21e26;
-  --hover-bg-color: #fff4e1;
-  --hover-duration: 0.3s;
+  --transform-hover: translateY(-2px);
+  --cta-box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
+
+  /*******************læs mere her knap 2 lysgrøn *******************/
+  --button-bg-color3: #a8b9a3;
+  --button-text-color3: #24352d;
+
+  /*Hover effects*/
+  --transform-hover: translateY(-2px);
+  --cta-box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
 }
