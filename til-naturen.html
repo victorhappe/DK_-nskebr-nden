@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/til-naturen.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <script src="js/main.js" defer></script>
     <script src="js/map.js" defer></script>
+    <script src="js/donation.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,31 +78,76 @@
             </div>
         </section>
 
-        <section class="donationstæller-info" id="donationstaller">
-            <div>
-                <h2>Donationstæller</h2>
-                <p>Formålet med donationstælleren er at give et løbende indblik i den samlede donationspulje, der er så
-                    retvisende som muligt. 
-                    Donationstælleren er en simulator, der løbende viser den forventede totale donation på et givent
-                    tidspunkt – både fra Dankort og partnere. Simulationen er baseret på Nets’ historiske
-                    transaktionsdata
-                    og prognoser for Dankort, herunder partnerbanker og -butikkers antal af transaktioner med Dankort.
-                    Simulatoren korrigeres løbende ud fra de faktiske transaktionstal.  
-                    Omregning til ’m2 naturområde’ er baseret på den m2-pris, som donationerne omsættes til af
-                    Naturfonden.
-                    Opkøb af 1 m2 naturområde sker til en pris på 12 kr. 
-                    Omregning til ’fodboldbaner og 4-personers telte’ er lavet for at gøre størrelsen af det optjente
-                    naturområde lettere forståeligt, og er baseret på en beregning, hvor 1 fodboldbane er opgjort til
-                    7.140
-                    m2 og et 4-personers telt er opgjort til 5 m2. 
-                    Donationstælleren viser den samlede estimerede donation for både Dankort og samarbejdspartnere fra
-                    1.
-                    januar i indeværende år. </p>
-            </div>
-            <div>
-                <img src="img/dyrehavennaturbillede 1.webp" alt="naturbillededonation">
-            </div>
+        <section class="donation-section">
+            <div class="donation-card">
+                <h2>Følg donationerne 2026</h2>
+
+                <div class="donation-total">
+                    <p>Donation estimeret indtil videre</p>
+                    <strong id="donationAmount">3.047.902,49 KR</strong>
+                </div>
+
+                <div class="donation-stats">
+                    <article>
+                        <p>Det svarer til...</p>
+                        <strong id="natureArea">253.918m²</strong>
+                        <span>naturområde</span>
+                    </article>
+
+                    <article>
+                        <p>Eller ca. størrelsen på</p>
+                        <strong id="footballFields">36</strong>
+                        <span>fodboldbaner</span>
+                    </article>
+
+                    <article>
+                        <p>eller</p>
+                        <strong id="tents">50.784</strong>
+                        <span>4-personers telte</span>
+                    </article>
+                </div>
+
+
+
+                <div class="donationstæller-info">
+                    <div>
+                        <h2>Donationstæller</h2>
+                        <p>Formålet med donationstælleren er at give et løbende indblik i den samlede donationspulje,
+                            der er
+                            så
+                            retvisende som muligt. 
+                            Donationstælleren er en simulator, der løbende viser den forventede totale donation på et
+                            givent
+                            tidspunkt – både fra Dankort og partnere. Simulationen er baseret på Nets’ historiske
+                            transaktionsdata
+                            og prognoser for Dankort, herunder partnerbanker og -butikkers antal af transaktioner med
+                            Dankort.
+                            Simulatoren korrigeres løbende ud fra de faktiske transaktionstal.  
+                            Omregning til ’m2 naturområde’ er baseret på den m2-pris, som donationerne omsættes til af
+                            Naturfonden.
+                            Opkøb af 1 m2 naturområde sker til en pris på 12 kr. 
+                            Omregning til ’fodboldbaner og 4-personers telte’ er lavet for at gøre størrelsen af det
+                            optjente
+                            naturområde lettere forståeligt, og er baseret på en beregning, hvor 1 fodboldbane er
+                            opgjort
+                            til
+                            7.140
+                            m2 og et 4-personers telt er opgjort til 5 m2. 
+                            Donationstælleren viser den samlede estimerede donation for både Dankort og
+                            samarbejdspartnere
+                            fra
+                            1.
+                            januar i indeværende år. </p>
+                    </div>
+                    <div>
+                        <img src="img/dyrehavennaturbillede1.webp" alt="naturbillededonation">
+                    </div>
+
+                </div>
+
         </section>
+
+
 
 
         <section id="aktiviteter" class="aktiviteterkarrussel">
@@ -111,7 +158,8 @@
                     <img src="img/vandreturhammer.webp" alt="vandreture">
                     <h3>Vandreture</h3>
                     <p>Der er allerede nu stier i området, hvor du kan opleve naturen. Se kortet nedenfor på siden.
-                        Naturområdet har fri offentlig adgang og får direkte stiforbindelser fra Korsør, Korsør Station
+                        Naturområdet har fri offentlig adgang og får direkte stiforbindelser fra Korsør, Korsør
+                        Station
                         og motorvejsparkeringen..</p>
 
                     <div class="lokation">
@@ -125,8 +173,10 @@
                 <div class="aktivitet-card">
                     <img src="img/fuglereservat.webp" alt="fuglereservat">
                     <h3>Fuglereservater</h3>
-                    <p>Den bedste natur er i fuglereservatet ved Lejodde og Lejsø. Her yngler fugle som den sjældne stor
-                        kobbersneppe, dværgterne, havterne, fjordterne, splitterne, vibe, stor præstekrave, rødben og
+                    <p>Den bedste natur er i fuglereservatet ved Lejodde og Lejsø. Her yngler fugle som den sjældne
+                        stor
+                        kobbersneppe, dværgterne, havterne, fjordterne, splitterne, vibe, stor præstekrave, rødben
+                        og
                         strandskade forår og sommer.</p>
 
                     <div class="lokation">
@@ -154,7 +204,8 @@
                 <div class="aktivitet-card">
                     <img src="img/kayak.webp" alt="kayak">
                     <h3>Kajak ved fjorden</h3>
-                    <p>Oplev den rolige natur fra vandet og kom tæt på fuglelivet langs kysten. Fjorden byder på smukke
+                    <p>Oplev den rolige natur fra vandet og kom tæt på fuglelivet langs kysten. Fjorden byder på
+                        smukke
                         udsigter, stille vand og gode muligheder for både begyndere og erfarne kajakroere.</p>
 
                     <div class="lokation">
@@ -253,9 +304,11 @@
                     </p>
                 </article>
                 <aside id="efficiency" class="info-box hide">Her kan du udforske udvalgte naturområder i Danmark.
-                    Klik på de røde punkter i kortet for at få information om hvert område, aktiviteter og naturtyper.
+                    Klik på de røde punkter i kortet for at få information om hvert område, aktiviteter og
+                    naturtyper.
                 </aside>
-                <aside id="requirement" class="info-box hide">Vælg et område på kortet for at se fakta, aktiviteter og
+                <aside id="requirement" class="info-box hide">Vælg et område på kortet for at se fakta, aktiviteter
+                    og
                     naturoplevelser.</aside>
             </section>
         </div>
@@ -265,72 +318,68 @@
         <section class="footerindhold">
 
             <section class="footervenstre">
-                <img src="img/logo.svg" alt="logo">
+                <img class="footer-logo" src="img/logo.svg" alt="logo">
 
                 <h3>Sociale medier</h3>
-                <p>Find vores bedste bud på aktiviteter med venner og familie på vores sociale medier.
-                </p>
+                <p>Find vores bedste bud på aktiviteter med venner og familie på vores sociale medier.</p>
 
                 <div class="socials">
-                    <div>
-                        <a href="https://www.instagram.com/dankort.danmark/"> <img src="img/tiktokikon.svg"
-                                alt="tiktok">
-                            DKØnskebrønden</a>
-                    </div>
-                    <div>
-                        <a href="https://www.instagram.com/dankort.danmark/"> <img src="img/instagramikon.svg"
-                                alt="instagramikon">
-                            DKØnskebrønden</a>
-                    </div>
+                    <a href="https://www.instagram.com/dankort.danmark/">
+                        <img src="img/tiktokikon.svg" alt="tiktok">
+                        DKØnskebrønden
+                    </a>
 
+                    <a href="https://www.instagram.com/dankort.danmark/">
+                        <img src="img/instagramikon.svg" alt="instagram">
+                        DKØnskebrønden
+                    </a>
+                </div>
             </section>
-            <section class="footerhoejre">
 
+            <section class="footerhoejre">
                 <div class="kontakt-osv">
 
                     <div>
                         <h3>Om Dankort</h3>
                         <ul>
-                            <li><a href="https://dankort.dk/dankort"> Dankort</a></li>
-                            <li><a href="https://dankort.dk/logo-og-billeder"> Download logoer</a></li>
+                            <li><a href="https://dankort.dk/dankort">Dankort</a></li>
+                            <li><a href="https://dankort.dk/logo-og-billeder">Download logoer</a></li>
                         </ul>
                     </div>
-
 
                     <div>
                         <h3>Kontakt</h3>
                         <ul>
                             <li><a href="https://dankort.dk/kontakt-salg">Kontakt Salg</a></li>
-                            <li><a href="https://dankort.dk/kontakt-erhverv"> Kontakt Kundeservice</a></li>
-                            <li><a href="https://dankort.dk/support-erhverv"> Support Erhverv</a></li>
-                            <li><a href="https://dankort.dk/support-privat"> Support Privat</a></li>
+                            <li><a href="https://dankort.dk/kontakt-erhverv">Kontakt Kundeservice</a></li>
+                            <li><a href="https://dankort.dk/support-erhverv">Support Erhverv</a></li>
+                            <li><a href="https://dankort.dk/support-privat">Support Privat</a></li>
+                        </ul>
                     </div>
 
                     <div>
                         <h3>Politikker</h3>
                         <ul>
                             <li><a
-                                    href="https://www.nets.eu/GDPR/Pages/Privacy-notice-for-nets.aspx?__hstc=79159691.8961f7ca1b3d0ec28f29c57cde92893a.1777811143345.1779615781369.1779656944202.7&__hssc=79159691.1.1779656944202&__hsfp=07e37af9b1e8bc5563ba94b3eae5112c">Privatlivspolitikker</a>
+                                    href="https://www.nets.eu/GDPR/Pages/Privacy-notice-for-nets.aspx">Privatlivspolitikker</a>
                             </li>
-                            <li><a
-                                    href="https://www.nets.eu/dk-da/Pages/cookie-policy.aspx?__hstc=79159691.8961f7ca1b3d0ec28f29c57cde92893a.1777811143345.1779615781369.1779656944202.7&__hssc=79159691.2.1779656944202&__hsfp=925c390904380e9e314cdab41bde63af">Cookies</a>
-                            </li>
-                            <li><a
-                                    href="https://support.nets.eu/da-DK/article/general-nexi-group-statement?__hstc=79159691.8961f7ca1b3d0ec28f29c57cde92893a.1777811143345.1779615781369.1779656944202.7&__hssc=79159691.2.1779656944202&__hsfp=925c390904380e9e314cdab41bde63af">
-                                    AEE regulativ</a></li>
+                            <li><a href="https://www.nets.eu/dk-da/Pages/cookie-policy.aspx">Cookies</a></li>
+                            <li><a href="https://support.nets.eu/da-DK/article/general-nexi-group-statement">AEE
+                                    regulativ</a></li>
                         </ul>
                     </div>
 
                 </div>
-                <div>
-                    <img src="img/dankortmærke.svg" alt="dankortmærke">
-                </div>
-                <div class="dkø-slogan">
-                    <img src="img/ønskebrøndslogan.svg" alt="ønskebrøndslogan">
+
+                <div class="footer-billeder">
+                    <img src="img/dankortmaerke.svg" alt="dankortmærke">
+                    <img src="img/onskebrondslogan.svg" alt="ønskebrøndslogan">
                 </div>
             </section>
+
         </section>
     </footer>
+
 </body>
 
 </html>

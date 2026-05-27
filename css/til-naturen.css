@@ -1,3 +1,17 @@
+/************ Reset **************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .naturen-btn {
   display: inline-block;
   margin-top: 1rem;
@@ -119,7 +133,7 @@ main {
 
 /******************DONATIONSTÆLLER***************/
 .donationstæller-info {
-  background-color: var(--secondary-color2);
+  background-color: #dde2cc;
   border-radius: 30px;
   padding: 20px;
   margin: 20px;
@@ -209,7 +223,7 @@ main {
 }
 
 .kortoversigt {
-  background-color: var(--secondary-color2);
+  background-color: #dde2cc;
   padding: 50px;
   justify-content: center;
   margin: 20px 30px 20px 30px;
@@ -225,11 +239,11 @@ main {
 
 #efficiency,
 #requirement {
-  background-color: var(--primary-color);
+  background-color: #fff4e1;
   padding: 20px;
   border-radius: 30px;
   margin: 20px 30px 20px 30px;
-  color: var(--secondary-color1);
+  color: #24352d;
   font-family: var(--font-family);
 }
 
