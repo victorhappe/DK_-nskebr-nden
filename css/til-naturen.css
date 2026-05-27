@@ -18,9 +18,10 @@ img {
   padding: 0.6rem 1.2rem;
 
   background-color: var(--secondary-color2);
-  color: #24352d;
+  color: var(--primary-color);
+  font-weight: var(--font-weight-cta);
 
-  border-radius: 999px;
+  border-radius: var(--border-radius-cta);
   text-decoration: none;
 
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
@@ -30,7 +31,6 @@ img {
 }
 
 .naturen-btn:hover {
-  background-color: var(--secondary-color2);
   transform: translateY(-2px);
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
 }
@@ -43,7 +43,7 @@ img {
   background-color: var(--accent-color1);
   color: var(--accent-color2);
   margin-top: auto;
-
+  font-weight: var(--font-weight-cta);
   border-radius: 999px;
   text-decoration: none;
 
@@ -54,7 +54,6 @@ img {
 }
 
 .naturencards-btn:hover {
-  background-color: var(--accent-color1);
   transform: translateY(-2px);
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
 }

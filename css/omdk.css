@@ -94,10 +94,10 @@ p {
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
 
-  background-color: #24352d;
-  color: white;
-
-  border-radius: 999px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color2);
+  font-weight: var(--font-weight-cta);
+  border-radius: var(--border-radius-cta);
   text-decoration: none;
 
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
@@ -105,16 +105,20 @@ p {
 }
 
 .omdk-btn:hover {
-  background-color: #1e2a24;
   transform: translateY(-2px);
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
 }
 /* sections style */
 .first-section-omdk,
 #hvad-er-dankort-onskebronden,
-#donationen-går-ud-pa,
-#grontransport {
-  background-color: #24352d;
+#grontransport,
+.donationen-gar-ud-pa {
+  background-color: var(--primary-color);
+  padding: 2rem 1rem;
+}
+
+#donationen-gar-ud-pa {
+  background-color: var(--primary-color);
   padding: 2rem 1rem;
 }
 
@@ -140,8 +144,8 @@ p {
 }
 
 .card-style-gronbaggrund {
-  background-color: #d1d8c0;
-  color: #24352d;
+  background-color: var(--secondary-color2);
+  color: var(--primary-color);
   row-gap: 3rem;
 }
 
@@ -153,7 +157,7 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
-.omdk-text h1 {
+.omdk-text h2 {
   line-height: 1.1;
 }
 
@@ -173,18 +177,17 @@ p {
   margin-bottom: 1.5rem;
 }
 /*donationen-går-ud-pa*/
-.donationen-går-ud-pa h2,
-.donationen-går-ud-pa h3 {
-  margin-top: 1.5rem;
+.donationen-gar-ud-pa h2,
+.donationen-gar-ud-pa h3 {
   margin-bottom: 1.5rem;
   line-height: 1.1;
 }
 
-.donationen-går-ud-pa li {
+.donationen-gar-ud-pa li {
   margin-left: 18px;
 }
 
-.donationen-går-ud-pa p {
+.donationen-gar-ud-pa p {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -226,7 +229,7 @@ p {
 
   .card-style-gronbaggrund {
     align-items: start;
-    background-color: #d1d8c0;
+    background-color: var(--secondary-color2);
     color: #24352d;
   }
 }

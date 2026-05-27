@@ -82,6 +82,7 @@ h4 {
   width: 120px;
   padding: 14px;
   border: none;
+  font-weight: var(--font-weight-cta);
   border-radius: 30px;
   background: var(--accent-color1);
   color: var(--accent-color2);
