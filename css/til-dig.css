@@ -229,6 +229,7 @@ iframe {
 }
 
 /********* en ore af gangen ***********/
+
 .card-ore {
   display: grid;
   place-items: center;
@@ -237,6 +238,7 @@ iframe {
   color: #ffff;
   line-height: 1.5;
 }
+
 .card-ore h2 {
   margin-bottom: 2rem;
 }
