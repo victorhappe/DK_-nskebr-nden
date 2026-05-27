@@ -104,7 +104,7 @@ img {
   border-radius: 20px;
 
   text-decoration: none;
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-cta);
   font-size: 1rem;
   box-shadow: var(--box-shadow-cta);
 
@@ -113,7 +113,7 @@ img {
 
 .hero-btn:hover {
   transform: var(--transform-hover);
-  box-shadow: var(--box-shadow-cta);
+  box-shadow: var(--cta-box-shadow);
 }
 
 /*********donation*******/
@@ -245,7 +245,7 @@ img {
 
   border-radius: 50%;
 
-  background-color: #d1d8c0;
+  background-color: #dde2cc;
 
   display: flex;
   justify-content: center;
@@ -270,11 +270,10 @@ img {
   align-items: center;
 
   width: fit-content;
-
+  font-weight: var(--font-weight-cta);
   margin: 1rem auto 0 auto;
 
   padding: 0.6rem 1.2rem;
-  font-weight: var(--font-weight);
   background-color: #e21e26;
   color: white;
 
@@ -286,7 +285,7 @@ img {
 }
 .fordele-btn:hover {
   transform: translateY(-2px);
-  box-shadow: var(--box-shadow-cta);
+  box-shadow: var(--cta-box-shadow);
 }
 
 /*********kort************/
@@ -334,7 +333,7 @@ img {
   align-items: center;
 
   width: fit-content;
-
+  font-weight: var(--font-weight-cta);
   margin: 1rem auto 0 auto;
 
   padding: 0.6rem 1.2rem;
@@ -350,7 +349,7 @@ img {
 
 .kort-btn:hover {
   transform: translateY(-2px);
-  box-shadow: var(--box-shadow-cta);
+  box-shadow: var(--cta-box-shadow);
 }
 
 .dkmap img {
@@ -408,9 +407,9 @@ img {
 
   padding: 0.6rem 1.2rem;
 
-  background-color: #a8b9a3;
+  background-color: #dde2cc;
   color: var(--primary-color);
-  font-weight: bold;
+  font-weight: var(--font-weight-cta);
 
   border-radius: 20px;
   text-decoration: none;
@@ -421,7 +420,7 @@ img {
 
 .apple-btn:hover {
   transform: translateY(-2px);
-  box-shadow: var(--box-shadow-cta);
+  box-shadow: var(--cta-box-shadow);
 }
 
 /******samarbejdspartnere**********/
