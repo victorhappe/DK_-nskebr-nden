@@ -45,7 +45,6 @@ nextBtn.addEventListener("click", moveNext);
 prevBtn.addEventListener("click", movePrev);
 
 /* modal dankort*/
-
 // få fat i modal
 var modal = document.getElementById("myModal");
 
@@ -57,7 +56,7 @@ var span = document.getElementsByClassName("close")[0];
 
 // klikker på knappen, åbner modal
 btn.onclick = function () {
-  modal.style.display = "block";
+  modal.style.display = "flex";
 };
 
 // Når brugeren klikker på <span> (x), lukker modal
