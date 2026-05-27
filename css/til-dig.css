@@ -21,6 +21,10 @@ main {
   line-height: 1.5;
 }
 
+h2 {
+  margin-bottom: 1rem;
+}
+
 /******** section setup ********/
 .video-info,
 .dine-fordele,
@@ -50,12 +54,12 @@ main {
   content: "";
   display: block;
 
-  width: 400px; /* længden på stregen */
-  height: 3px; /* tykkelsen */
+  width: 400px;
+  height: 3px;
 
   background-color: #ffffff;
 
-  margin: 2rem auto; /* CENTRERER den */
+  margin: 2rem auto; /* centrering */
   border-radius: 2px;
 }
 
@@ -79,7 +83,7 @@ main {
   padding: 2rem;
   gap: 2rem;
   line-height: 1.5;
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 .sporgsmaal-tekst {
@@ -391,7 +395,7 @@ iframe {
 
 /**** modal dankort ****/
 .modal-dankort {
-  display: flex;
+  display: none;
 
   position: fixed;
   inset: 0;
@@ -403,6 +407,9 @@ iframe {
 
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-dankort.open {
+  display: flex;
 }
 
 /* modal indholdsboks */
@@ -422,6 +429,9 @@ iframe {
 .modal-content h3,
 .modal-content p {
   margin: 2rem 0;
+}
+.modal-list {
+  padding-left: 1.5rem;
 }
 
 /* Luk knap */
@@ -555,6 +565,15 @@ iframe {
     width: 100%;
     height: auto;
     object-fit: contain;
+  }
+  /* modal dankort */
+  .modal-dankort {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .modal-content {
+    width: min(90%, 700px);
   }
 
   /* faq */

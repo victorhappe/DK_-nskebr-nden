@@ -1,18 +1,37 @@
+/************ Reset **************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 body {
   background: var(--primary-color);
   font-family: var(--font-family);
 }
 
-.activity_card {
-  max-width: 1000px;
-  margin: 50px auto;
-  background: var(--secondary-color1);
-  border-radius: 20px;
-  padding: 50px;
+#container {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+  padding: 2rem 1rem;
+}
 
+.activity_card {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 60px;
+  margin: 0 auto;
+
+  border-radius: var(--border-radius-cta);
+  padding: 2rem;
+  gap: 2rem;
+
+  background: var(--secondary-color1);
   font-size: var(--paragraph-font-size);
   line-height: var(--line-height);
 }

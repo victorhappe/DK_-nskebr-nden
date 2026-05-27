@@ -45,31 +45,31 @@ nextBtn.addEventListener("click", moveNext);
 prevBtn.addEventListener("click", movePrev);
 
 /* modal dankort*/
-// få fat i modal
-var modal = document.getElementById("myModal");
+// få fat i modal-elementet i html
+const modal = document.getElementById("myModal");
 
-// få fat i knappen der åbner modal
-var btn = document.getElementById("myBtn");
+// Finder knappen der åbner modal
+const btn = document.getElementById("myBtn");
 
-// få fat i <span> elementet der lukker modal
-var span = document.getElementsByClassName("close")[0];
+// Finder første element med class="close" i hele dokumentet
+const close = document.querySelector(".close");
 
-// klikker på knappen, åbner modal
-btn.onclick = function () {
-  modal.style.display = "flex";
-};
+// Når brugeren klikker på "Få et Dankort" knappen
+btn.addEventListener("click", () => {
+  modal.classList.add("open");
+});
 
-// Når brugeren klikker på <span> (x), lukker modal
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-// Når brugeren klikker hvor som helst uden for modal, lukker den
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+// Når brugeren klikker på X (luk-knappen)
+close.addEventListener("click", () => {
+  modal.classList.remove("open");
+});
+// Når brugeren klikker på selve modal baggrunden (overlay)
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    // Lukker modal ved at fjerne "open"
+    modal.classList.remove("open");
   }
-};
+});
 
 /* Faq */
 var buttons = document.getElementsByClassName("plus-btn");
