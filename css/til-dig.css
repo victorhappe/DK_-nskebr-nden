@@ -49,6 +49,10 @@ p {
   background-color: #24352d;
   padding: 2rem 1rem;
 }
+.faq {
+  background-color: #dde2cc;
+  color: #24352d;
+}
 
 /*********  container ********/
 .container {
@@ -313,7 +317,95 @@ iframe {
   object-fit: contain;
 }
 
-/* modal*/
+/********* faq ***********/
+.faq-text {
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+.questionsections {
+  display: grid;
+  align-items: left;
+  text-align: left;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+.section h3 {
+  margin-bottom: 1rem;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #f3eadc;
+  padding: 15px;
+
+  border-radius: 20px;
+
+  margin-bottom: 0;
+  transition: border-radius 0.2s ease;
+}
+.accordion.active {
+  border-radius: 20px 20px 0 0;
+}
+
+.question {
+  margin: 0;
+  width: 80%;
+}
+
+.plus-btn {
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #d8dcc7;
+
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* hover på knappen */
+.active,
+.plus-btn:hover {
+  background-color: #ccc;
+}
+
+/* panelet som er dropdownen med svartekst i */
+.panel {
+  background-color: #f3eadc;
+
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height 0.2s ease-out;
+
+  border-radius: 0 0 20px 20px;
+
+  margin-bottom: 20px;
+}
+.panel p {
+  padding: 10px 18px 18px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/*
+  position: relative;
+  top: -20px;
+  padding: 0 18px;
+  background-color: #f3eadc;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 5px;
+}
+
+/**** modal dankort ****/
 .modal {
   display: none;
   position: fixed;
@@ -471,4 +563,6 @@ iframe {
     height: auto;
     object-fit: contain;
   }
+
+  /* faq */
 }
