@@ -12,7 +12,16 @@ img {
   display: block;
 }
 
+h2 {
+  margin: 1rem 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
 .naturen-btn {
+  margin-top: auto;
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
@@ -37,7 +46,7 @@ img {
 
 .naturencards-btn {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-left: 20px;
   padding: 0.6rem 1.2rem;
   background-color: var(--accent-color1);
@@ -114,6 +123,8 @@ main {
   object-fit: cover;
 }
 .hero_tilnaturentekst {
+  padding: 2rem;
+  margin-top: 1rem;
   color: var(--accent-color2);
   width: 100%;
   margin-left: 0;
@@ -175,10 +186,11 @@ main {
 }
 
 .aktivitet-card {
+  padding: 2rem;
+  margin-top: 1rem;
   flex: 0 0 80%;
   background-color: var(--secondary-color1);
-  border-radius: 30px;
-  padding: 1rem;
+  border-radius: 20px;
   flex-shrink: 0;
   scroll-snap-align: start;
   text-align: left;
@@ -190,7 +202,7 @@ main {
 }
 
 .aktivitet-card h3 {
-  margin-left: 30px;
+  margin: 1rem 0;
 }
 
 .aktivitet-card img {
