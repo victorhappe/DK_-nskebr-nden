@@ -110,7 +110,7 @@ p {
   width: 100%;
   min-height: 250px;
 
-  border: 0;
+  border: none;
   border-radius: 12px;
 
   display: block;
@@ -122,6 +122,9 @@ p {
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
+}
+iframe {
+  border: none;
 }
 
 /********* dine fordele ***********/
