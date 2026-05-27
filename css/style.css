@@ -2,7 +2,7 @@
   /****** Colors  ******/
   --primary-color: #24352d;
   --secondary-color1: #fff4e1;
-  --secondary-color2: #a8b9a3;
+  --secondary-color2: #dde2cc;
   --accent-color1: #e21e27;
   --accent-color2: #ffffff;
 
@@ -33,13 +33,13 @@
   --display-cta: inline-block;
   --margin-top-cta: 1rem;
   --padding-cta: 6rem 1.2rem;
-  --border-radius-cta: 999px;
+  --border-radius-cta: 20px;
   --text-decoration-cta: none;
 
   --box-shadow-cta: 0px 6px 10px rgba(0, 0, 0, 0.2);
   --transition-cta: all 0.2s ease;
   --allign-self-cta: flex-start;
-  --font-weight-cta: bold;
+  --font-weight-cta: 500;
 
   /****************************************** BUTTON STYLES ************************************************/
 
@@ -53,7 +53,7 @@
   --hover-duration: 0.3s;
 
   /*******************Dankort knapper lysegrønne *******************/
-  --button-bg-color2: #a8b9a3;
+  --button-bg-color2: #dde2cc;
   --button-text-color2: #24352d;
 
   /*Hover effects*/
@@ -62,14 +62,14 @@
 
   /*******************læs mere her knap 1 mørkegrøn *******************/
   --button-bg-color2: #24352d;
-  --button-text-color2: #a8b9a3;
+  --button-text-color2: #dde2cc;
 
   /*Hover effects*/
   --transform-hover: translateY(-2px);
   --cta-box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
 
   /*******************læs mere her knap 2 lysgrøn *******************/
-  --button-bg-color3: #a8b9a3;
+  --button-bg-color3: #dde2cc;
   --button-text-color3: #24352d;
 
   /*Hover effects*/

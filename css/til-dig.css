@@ -378,7 +378,6 @@ iframe {
 }
 
 /* hover på knappen */
-.active,
 .plus-btn:hover {
   background-color: #ccc;
 }
