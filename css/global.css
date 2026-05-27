@@ -12,8 +12,8 @@
   justify-content: space-between;
   align-items: center;
 
-  background-color: #fff4e1;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary-color1);
+  box-shadow: var(--box-shadow-cta);
 }
 
 .logo img {
@@ -35,9 +35,9 @@
   width: 120%;
   height: 5px;
   border-radius: 5px;
-  background-color: #e21e26;
+  background-color: var(--accent-color1);
   margin-bottom: 8px;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow-cta);
 }
 
 main section {
@@ -89,17 +89,17 @@ main section {
 .main-nav.active a {
   text-align: center;
   padding: 0.9rem 2rem;
-  border-radius: 999px;
-  background-color: #e21e26;
-  color: white;
+  border-radius: var(--border-radius-cta);
+  background-color: var(--accent-color1);
+  color: var(--accent-color2);
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: var(--font-family);
+  font-weight: var(--h2-font-weight);
 }
 .main-nav.active a:hover {
-  background-color: #c91820;
+  background-color: var(--accent-color1);
   transform: translateY(-2px);
-  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
+  box-shadow: var(--box-shadow-cta);
 }
 
 .menu li:hover {
@@ -126,8 +126,8 @@ main section {
 
   font-family: var(--font-family);
   font-size: var(--paragraph-font-size);
-  background: #e21e26;
-  color: #ffffff;
+  background: var(--accent-color1);
+  color: var(--accent-color2);
 
   border-radius: 20px;
   width: 80%;
@@ -139,18 +139,18 @@ main section {
 #accept-btn {
   margin: 1rem auto 0 auto;
   padding: 0.6rem 1.2rem;
-
+  font-weight: var(--cta-font);
   justify-content: center;
   align-items: center;
   float: right;
 
   font-family: var(--font-family);
   font-size: var(--paragraph-font-size);
-  background-color: #fff4e1;
+  background-color: var(--secondary-color1);
   color: #000000;
 
   border: none;
-  border-radius: 30px;
+  border-radius: var(--border-radius-cta);
 }
 
 #accept-btn:hover,
@@ -269,20 +269,20 @@ main section {
   .main-nav a {
     padding: 0.6em 2rem;
     border-radius: 999px;
-    background-color: #e21e26;
-    color: white;
+    background-color: var(--accent-color1);
+    color: var(--accent-color2);
     text-decoration: none;
     font-size: 0.9rem;
-    font-family: "Raleway", sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
 
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow-cta);
 
     transition: 0.2s ease;
   }
 
   .main-nav a:hover {
-    background-color: #c91820;
+    background-color: var(--accent-color1);
     transform: translateY(-2px);
     box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.22);
   }
