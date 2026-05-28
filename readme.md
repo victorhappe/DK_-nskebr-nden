@@ -135,7 +135,7 @@ feature-burger-menufeature-hotspotsfeature-slider
 Vi har kommenteret vores kode for at skabe bedre overblik og gøre det lettere at samarbejde i gruppen.
 Eksempel:
 
-/**\*\***\*\*\***\*\*** FOOTER ****\*\*****\*****\*\*****/
+/**\*\***\*\*\***\*\*** FOOTER \***\*\*\*\*\***\*\***\*\*\*\*\***/
 
 # Arbejdsfordeling
 
@@ -145,16 +145,21 @@ global.css
 index.css
 donation.js
 Header/burger-menu
+
 -Signe
 til-dig.html
 til-dig.css
 om-dk.html
 om-dk.css
+tildig.js
 Popover/disclaimer
+Modal/sådan får du dankort
+
 -Yasmin
 API
 singleview.html
 style.css
+
 -Eline
 til-naturen.html
 til-naturen.css
