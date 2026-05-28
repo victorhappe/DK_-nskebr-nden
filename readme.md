@@ -37,33 +37,11 @@ om-dk.html – Side med information om konceptet og Dankort Øremærket.
 global.css – Styrer globale elementer som header, footer, farver og knapper.
 JavaScript-filer – Styrer det dynamiske og interaktive indhold på siderne.
 
-## Teknologier
-
-Projektet er udviklet med:
-
-- HTML
-- CSS
-- JavaScript
-- JSON/API-data
-- Git & GitHub
-
-Vi har valgt at hardcode størstedelen af websitet for at have fuld kontrol over layout, performance og struktur, mens API’et bruges til dynamisk indhold omkring naturområderne.
-
-## Responsivitet
-
-Websitet er udviklet med mobile-first tilgang og tilpasset både mobil og desktop ved hjælp af media queries.
-
-## Hvordan koden fungerer
-
-Vi har opdelt JavaScript-funktionaliteten, så hver side og funktion har sin egen JavaScript-fil.
-
 # main.js
 
-Bruges globalt på alle sider og styrer blandt andet:
+Bruges globalt på alle sider og styrer:
 
 - Burger-menu
-- Sliderfunktioner
-- Modal/pop-up funktionalitet
 
 # donation.js
 
@@ -79,10 +57,6 @@ Koden bruges til at beregne donationens størrelse og omregne donationen til:
 Koden bruges til at skabe interaktive hotspots på et Danmarkskort.
 Når brugeren holder musen over eller klikker på et naturområde:
 
-- Ændres hotspot-farven
-- Information opdateres dynamisk
-- Billeder og fakta vises
-- Aktiviteter knyttet til naturområdet vises
 - Funktionen gør kortet interaktivt og giver brugeren mulighed for at udforske forskellige naturområder direkte på hjemmesiden.
 
 # tildig.js
@@ -115,10 +89,12 @@ Vi har forsøgt at navngive filer, variabler og funktioner så tydeligt og beskr
 
 # Eksempler på variabler
 
-const burger = document.querySelector(".burger");const modal = document.getElementById("disclaimer-modal");
+/**\*\*** Colors **\*\***/
 --primary-color: #24352d;
-Eksempler på funktioner
-burger.addEventListener("click", burgerClick);function mouseOutLejodde() { lejodde.style.fill = "var(--accent-color1)";}
+--secondary-color1: #fff4e1;
+--secondary-color2: #dde2cc;
+--accent-color1: #e21e27;
+--accent-color2: #ffffff;
 
 ## Scripts
 
@@ -136,6 +112,7 @@ Vi har kommenteret vores kode for at skabe bedre overblik og gøre det lettere a
 Eksempel:
 
 /**\*\***\*\*\***\*\*** FOOTER \***\*\*\*\*\***\*\***\*\*\*\*\***/
+feature-burgermenu
 
 # Arbejdsfordeling
 
@@ -177,18 +154,6 @@ Vores workflow har været:
 - Merge til main når funktionen virkede
 - Dette gjorde det lettere at holde styr på arbejdsfordelingen og undgå konflikter i projektet.
 
-# Funktionalitet
-
-Websitet indeholder blandt andet følgende funktioner:
-
-- Dynamisk visning af information om naturområder
-- Hover- og klikfunktioner på hotspots
-- Dynamisk opdatering af tekst og billeder
-- Interaktive sliders
-- Modal/pop-up vinduer
-- Navigation mellem sider og sektioner
-- Responsivt design til mobil og desktop
-
 ## Bæredygtighed
 
 Vi har forsøgt at udvikle løsningen med fokus på performance og bæredygtighed.
@@ -196,21 +161,10 @@ Tiltag
 
 - Bruge lette filformater som WebP og SVG
 - Undgå tunge frameworks
-- Genbruge kode gennem global.css
+- Genbruge kode gennem global.css og style.css
 - Optimere billeder via Squoosh
 - Undgå autoplay-videoer
 - Holde løsningen simpel og letvægtig
-
-Et lettere website kræver færre ressourcer at loade og bruge.
-
-# Udfordringer undervejs
-
-Under udviklingen oplevede vi enkelte udfordringer i forbindelse med:
-
-- Merge conflicts i GitHub
-- Responsivitet mellem mobil og desktop
-- Koordinering af kode mellem branches
-- Disse udfordringer blev løst gennem løbende kommunikation og strukturering af workflow.
 
 # Mulige forbedringer
 
@@ -218,7 +172,6 @@ Hvis projektet skulle videreudvikles, kunne vi blandt andet arbejde videre med:
 
 - Mere avanceret API-integration
 - Flere dynamiske aktiviteter
-- Bedre animationer og transitions
 - Mere ensartet responsivitet på tværs af sider
 - Optimering af kode og komponentstruktur
 
