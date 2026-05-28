@@ -104,6 +104,14 @@ Git branches
 # Vi navngiver branches efter den funktion eller side der arbejdes på.
 
 Eksempel:
+feature-burger-menufeature-hotspotsfeature-slider
+
+## Kommentarer i koden
+
+Vi har kommenteret vores kode for at skabe bedre overblik og gøre det lettere at samarbejde i gruppen.
+Eksempel:
+
+/**\*\***\*\*\***\*\*** FOOTER \***\*\*\*\*\***\*\***\*\*\*\*\***/
 feature-burgermenu
 
 # Arbejdsfordeling
@@ -114,16 +122,21 @@ global.css
 index.css
 donation.js
 Header/burger-menu
+
 -Signe
 til-dig.html
 til-dig.css
 om-dk.html
 om-dk.css
+tildig.js
 Popover/disclaimer
+Modal/sådan får du dankort
+
 -Yasmin
 API
 singleview.html
 style.css
+
 -Eline
 til-naturen.html
 til-naturen.css
