@@ -1,5 +1,5 @@
-console.log("enge:", enge);
 const enge = document.querySelector("#gjellerupEnge");
+console.log("enge:", enge);
 
 enge.addEventListener("mouseover", mouseOverGjellerup);
 enge.addEventListener("mouseout", mouseOutGjellerup);
