@@ -108,6 +108,30 @@ h4 {
   cursor: pointer;
 }
 
+.link-btn-rod {
+  background-color: var(--button-bg-color1);
+  color: var(--button-text-color1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  margin-top: 1rem;
+  line-height: 1;
+  padding: 0.6rem 1.2rem;
+
+  font-weight: var(--font-weight-cta);
+  border-radius: var(--border-radius-cta);
+  text-decoration: none;
+
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease;
+}
+
+.link-btn-rod:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--cta-box-shadow);
+}
 @media (min-width: 768px) {
   .activity_card {
     grid-template-columns: 1fr 1fr;

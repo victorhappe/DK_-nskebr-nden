@@ -26,7 +26,7 @@ Trello
 
 Projektet er opdelt i HTML-, CSS- og JavaScript-filer.
 
-Ønskebrønden/├── index.html├── til-dig.html├── til-naturen.html├── om-dk.html├── css/│ ├── global.css│ ├── index.css│ ├── omdk.css│ ├── singleview.css│ ├── style.css│ ├── til-dig.css│ └── til-naturen.css├── js/│ ├── donation.js│ ├── main.js│ ├── map.js│ └── tildig.js├── img/└── readme.md
+Ønskebrønden/├── index.html├── til-dig.html├── til-naturen.html├── om-dk.html├── css/│ ├── global.css│ ├── index.css│ ├── omdk.css│ ├── singleview.css│ ├── style.css│ ├── til-dig.css│ └── til-naturen.css├── js/│ ├── donation.js│ ├── main.js│ ├── map.js│ └── tildig.js├── img/└── readme.md ├── fetch.js
 
 ## Filbeskrivelser
 
@@ -108,7 +108,8 @@ Dataene hentes i JSON-format og indsættes dynamisk på hjemmesiden gennem JavaS
 
 # Eksempel på endpoints
 
-(API endpoint indsættes her)
+API endpoint: https://supabase.com/dashboard/project/gnnsqekkjgykgsiatjms/editor/17581
+
 Navngivning
 
 Vi har forsøgt at navngive filer, variabler og funktioner så tydeligt og beskrivende som muligt.
@@ -135,7 +136,7 @@ feature-burger-menufeature-hotspotsfeature-slider
 Vi har kommenteret vores kode for at skabe bedre overblik og gøre det lettere at samarbejde i gruppen.
 Eksempel:
 
-/**\*\***\*\*\***\*\*** FOOTER ****\*\*****\*****\*\*****/
+/**\*\***\*\*\***\*\*** FOOTER \***\*\*\*\*\***\*\***\*\*\*\*\***/
 
 # Arbejdsfordeling
 
@@ -145,16 +146,20 @@ global.css
 index.css
 donation.js
 Header/burger-menu
+
 -Signe
 til-dig.html
 til-dig.css
 om-dk.html
 om-dk.css
 Popover/disclaimer
+
 -Yasmin
 API
 singleview.html
 style.css
+fetch.js
+
 -Eline
 til-naturen.html
 til-naturen.css
