@@ -44,29 +44,21 @@ function movePrev() {
 nextBtn.addEventListener("click", moveNext);
 prevBtn.addEventListener("click", movePrev);
 
-/* modal dankort*/
-// få fat i modal-elementet i html
+/* Modal dankort*/
 const modal = document.getElementById("myModal");
-
-// Finder knappen der åbner modal
 const btn = document.getElementById("myBtn");
-
-// Finder første element med class="close" i hele dokumentet
 const close = document.querySelector(".close");
 
-// Når brugeren klikker på "Få et Dankort" knappen
 btn.addEventListener("click", () => {
   modal.classList.add("open");
 });
 
-// Når brugeren klikker på X (luk-knappen)
 close.addEventListener("click", () => {
   modal.classList.remove("open");
 });
-// Når brugeren klikker på selve modal baggrunden (overlay)
+
 modal.addEventListener("click", (e) => {
   if (e.target === modal) {
-    // Lukker modal ved at fjerne "open"
     modal.classList.remove("open");
   }
 });
@@ -88,7 +80,7 @@ for (var i = 0; i < buttons.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
 
       // skifter til minus
-      this.textContent = "−";
+      this.textContent = "-";
     }
   });
 }

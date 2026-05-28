@@ -160,12 +160,13 @@ iframe {
   margin-top: auto;
 }
 
-/* slider */
+/* Slider */
+
 .fordele-slider {
   width: 100%;
   position: relative;
-  overflow: hidden; /* VIGTIG igen */
-  padding: 0; /* plads til pile */
+  overflow: hidden;
+  padding: 0;
 }
 
 .fordele-grid {
@@ -522,6 +523,10 @@ iframe {
     min-height: 400px;
   }
   /* dine fordele */
+  .fordele-card {
+    flex: 0 0 33.333%;
+    /* 3 cards på række */
+  }
   .fordele-grid {
     display: flex;
     flex-wrap: nowrap;
